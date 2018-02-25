@@ -17,9 +17,9 @@ public class BookCatalogResource {
 
     private static List<Book> books = new ArrayList<>();
     static{
-        books.add(new Book("Coding with Java: Springboot", "Purnima"));
-        books.add(new Book("Coding with Java: Dropwizard", "Marianne"));
-        books.add(new Book("Test Driven Development", "Fay"));
+        books.add(new Book("'Autumn'", "Ali Smith"));
+        books.add(new Book("Exit West", "Mohsin Hamid"));
+        books.add(new Book("Pachinko", "Min Jin Lee"));
     }
 
     public BookCatalogResource() {
@@ -27,19 +27,18 @@ public class BookCatalogResource {
 
     @GET
     @Path("/book")
-    public Response getWorkshops() {
+    public Response getBooks() {
         return Response.ok(books).build();
     }
 
     @GET
     @Path("/book/{id}")
-    public Response getWorkshopById(@PathParam("id") int id) {
-        Book book = books.get(id-1);
-        if (book==null){
-            return Response.ok("No workshop found.").build();
-        } else {
+    public Response getBooksById(@PathParam("id") int id) {
+        try {
+            Book book = books.get(id-1);
             return Response.ok(book).build();
+        } catch (Exception e){
+            return Response.ok("No book found.").build();
         }
-
     }
 }

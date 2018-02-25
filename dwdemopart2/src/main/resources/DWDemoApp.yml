@@ -1,4 +1,12 @@
 application: Dropwizard Demo Application
 environment: DEV
-version: 1.0
+version: 2.0
 template: Hello, %s!
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8090
+  adminConnectors:
+    - type: http
+      port: 8091
