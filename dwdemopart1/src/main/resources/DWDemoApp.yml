@@ -1,0 +1,4 @@
+application: Dropwizard Demo Application
+environment: DEV
+version: 1.0
+template: Hello, %s!
