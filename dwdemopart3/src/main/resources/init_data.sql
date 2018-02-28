@@ -3,7 +3,7 @@ insert into book(id, title, author) values (2, 'Exit West','Mohsin Hamid');
 insert into book(id, title, author) values (3, 'Pachinko','Min Jin Lee');
 insert into book(id, title, author) values (4, 'The Power','Naomi Alderman');
 insert into book(id, title, author) values (5, 'Sing, Unburied, Sing','Jesmyn Ward');
-insert into book(id, title, author) values (6, 'The Evolution of Beauty: How Darwin’s Forgotten Theory of Mate Choice Shapes the Animal World — and Us','Richard O. Prum');
+insert into book(id, title, author) values (6, 'The Evolution of Beauty: How Darwins Forgotten Theory of Mate Choice Shapes the Animal World — and Us','Richard O. Prum');
 insert into book(id, title, author) values (7, 'Grant','Ron Chernow');
 insert into book(id, title, author) values (8, 'Locking Up Our Own: Crime and Punishment in Black America','James Forman Jr.');
 insert into book(id, title, author) values (9, 'Prairie Fires: The American Dreams of Laura Ingalls Wilder','Caroline Fraser');
